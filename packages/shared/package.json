@@ -12,6 +12,10 @@
     "esm": "tsc -b ./tsconfig.json",
     "test": "jest --config jest.config.cjs"
   },
+  "style": {
+    "scrollbar": "./src/styles/scrollbar/scrollbar-Qinglong.css",
+    "other-styles": "./src/styles/scrollbar/other-styles.css"
+  },
   "devDependencies": {
     "@mono/tsconfig": "workspace:*",
     "@mono/eslint-config": "workspace:*"

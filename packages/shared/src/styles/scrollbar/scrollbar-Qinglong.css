@@ -1,0 +1,48 @@
+:root {
+  --theme-scrollbar-size: 6px;
+  --theme-scrollbar-color: #3eaf7c;
+  --theme-scrollbar-color-light: #4abf8a;
+  --theme-scrollbar-color-dark: #389e70;
+}
+
+/* 滚动条的外部容器 */
+.scrollbar-container {
+  overflow: auto;
+  scrollbar-width: thin; /* 标准化的滚动条宽度 */
+}
+
+/* 滚动条样式 */
+.scrollbar-container::-webkit-scrollbar {
+  width: var(--theme-scrollbar-size);
+  height:var(--theme-scrollbar-size);
+}
+
+.scrollbar-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background: var(--theme-scrollbar-color);
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-scrollbar-color-light);
+}
+/*-------------------------------------*/
+::-webkit-scrollbar {
+  width: var(--theme-scrollbar-size);
+  height:var(--theme-scrollbar-size);
+}
+
+::-webkit-scrollbar-track-piece {
+  border-radius: var(--theme-scrollbar-size);
+  background: rgba(0,0,0,.1)
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-scrollbar-color)
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--theme-scrollbar-color-light)
+}
