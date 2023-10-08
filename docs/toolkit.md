@@ -15,7 +15,7 @@ conventional-changelog:https://github.com/conventional-changelog/conventional-ch
 rollup-plugin-cleanup
 rollup-plugin-clear
 rollup-plugin-sizes
-rollup-plugin-terser
+@rollup/plugin-terser
 rollup-plugin-typescript2
 rollup-plugin-visualizer
 @rollup/plugin-alias 
