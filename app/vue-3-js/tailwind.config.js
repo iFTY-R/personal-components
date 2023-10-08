@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import UnoCSS from 'unocss'
+
+export default {
   content: [],
   theme: {
     extend: {}
   },
-  presets: [require('unocss')]
+  presets: [UnoCSS]
 }
