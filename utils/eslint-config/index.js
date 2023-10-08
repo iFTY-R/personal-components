@@ -3,7 +3,7 @@ const config = {
   parserOptions: {
     sourceType: 'module',
     // 相对于 tsconfigRootDir 的路径
-    project: './tsconfig.lint.json',
+    project: './tsconfig.lint.json'
     // 由于 tsconfigRootDir 无法通过 .eslintrc.cjs 来识别当前动态路径，只能在引用时再添加该属性
     // tsconfigRootDir: __dirname,
   },
@@ -11,7 +11,7 @@ const config = {
   env: {
     browser: true,
     node: true,
-    es6: true,
+    es6: true
   },
   plugins: ['@typescript-eslint', 'html', 'sonarjs', 'import'],
   extends: [
@@ -19,17 +19,16 @@ const config = {
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   rules: {
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/ban-types': 0,
-    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-unused-vars': [
       2,
-      { varsIgnorePattern: '^_', argsIgnorePattern: '^_', ignoreRestSiblings: true },
+      { varsIgnorePattern: '^_', argsIgnorePattern: '^_', ignoreRestSiblings: true }
     ],
     eqeqeq: [2, 'always', { null: 'ignore' }],
     'import/no-unresolved': [0, { commonjs: true, amd: true }],
@@ -41,16 +40,16 @@ const config = {
           {
             pattern: 'react',
             group: 'external',
-            position: 'before',
-          },
+            position: 'before'
+          }
         ],
         pathGroupsExcludedImportTypes: ['react'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
-          caseInsensitive: true,
-        },
-      },
+          caseInsensitive: true
+        }
+      }
     ],
     '@typescript-eslint/no-misused-promises': 2,
     '@typescript-eslint/ban-ts-comment': [
@@ -59,8 +58,8 @@ const config = {
         'ts-expect-error': false,
         'ts-ignore': true,
         'ts-nocheck': true,
-        'ts-check': false,
-      },
+        'ts-check': false
+      }
     ],
     '@typescript-eslint/explicit-module-boundary-types': 0,
     // don't use for in operator
@@ -77,8 +76,8 @@ const config = {
     // 不允许在范型和返回值之外的地方使用 void 类型
     '@typescript-eslint/no-invalid-void-type': 2,
     // 不可变的私有属性标记成 readonly
-    '@typescript-eslint/prefer-readonly': ['error', { onlyInlineLambdas: true }],
-  },
+    '@typescript-eslint/prefer-readonly': ['error', { onlyInlineLambdas: true }]
+  }
 }
 
 module.exports = config

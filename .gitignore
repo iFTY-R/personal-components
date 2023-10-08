@@ -26,3 +26,5 @@ tsconfig.tsbuildinfo
 temp
 dist
 lib
+
+build
