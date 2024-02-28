@@ -1,0 +1,1108 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.5",
+  "deps": {
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "@mono/eslint-config": "workspace:*",
+    "@mono/tsconfig": "workspace:^",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-html": "^1.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-strip": "^3.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/debug": "^4.1.12",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "chalk": "^5.3.0",
+    "clipanion": "4.0.0-rc.3",
+    "consola": "^3.2.3",
+    "cz-git": "^1.8.0",
+    "debug": "^4.3.4",
+    "eslint": "^8.57.0",
+    "fast-glob": "^3.3.2",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
+    "npm-run-all": "^4.1.5",
+    "nx": "^18.0.5",
+    "prettier": "^3.2.5",
+    "rollup": "^4.12.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-sizes": "^1.0.6",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "shx": "^0.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "docs/dependence-graph.jpg",
+        "hash": "9177875779589536333"
+      },
+      {
+        "file": ".prettierrc.cjs",
+        "hash": "12894622574013860443"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "16610494061382210559"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7371861669682867043"
+      },
+      {
+        "file": "utils/README.md",
+        "hash": "5707186280487992710"
+      },
+      {
+        "file": ".changeset/README.md",
+        "hash": "1472653584373238634"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "4378312908733566025"
+      },
+      {
+        "file": ".github/CODE_OF_CONDUCT.md",
+        "hash": "12071402560712303140"
+      },
+      {
+        "file": "app/a.js",
+        "hash": "6026281259633742780"
+      },
+      {
+        "file": ".changeset/config.json",
+        "hash": "10790352158944201181"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "928599200790301828"
+      },
+      {
+        "file": "docs/toolkit.md",
+        "hash": "10344218225541193811"
+      },
+      {
+        "file": ".github/CONTRIBUTING.md",
+        "hash": "14304671362604317051"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "9152743021205978451"
+      },
+      {
+        "file": "docs/Inspirations.md",
+        "hash": "8322122265685771124"
+      },
+      {
+        "file": "docs/dependence-draw.png",
+        "hash": "16499763547543645666"
+      },
+      {
+        "file": "README.md",
+        "hash": "16249132774247008719"
+      },
+      {
+        "file": ".lintstagedrc.json",
+        "hash": "5327488041943590416"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16605841714164039385"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "7720595512258520348"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "3036519978888239417"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "15753050312632864577"
+      },
+      {
+        "file": "package.json",
+        "hash": "2560255119750975300"
+      }
+    ],
+    "projectFileMap": {
+      "@mono/web": [
+        {
+          "file": "packages/web/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "packages/web/README.md",
+          "hash": "5526327165938306121"
+        },
+        {
+          "file": "packages/web/jest.config.cjs",
+          "hash": "6964207754933423919"
+        },
+        {
+          "file": "packages/web/package.json",
+          "hash": "11993547467726818946",
+          "deps": [
+            "@mono/core",
+            "@mono/shared",
+            "@mono/eslint-config",
+            "@mono/tsconfig",
+            "@mono/rollup"
+          ]
+        },
+        {
+          "file": "packages/web/rollups/cjs.rollup.mjs",
+          "hash": "16085676159222853839"
+        },
+        {
+          "file": "packages/web/rollups/esm.rollup.mjs",
+          "hash": "2217016429691011063"
+        },
+        {
+          "file": "packages/web/rollups/iife.rollup.mjs",
+          "hash": "6931368919702430598"
+        },
+        {
+          "file": "packages/web/src/__test__/index.spec.ts",
+          "hash": "6186996538233935245"
+        },
+        {
+          "file": "packages/web/src/index.ts",
+          "hash": "9231313937558643585"
+        },
+        {
+          "file": "packages/web/tsconfig.json",
+          "hash": "5787421851094167218"
+        },
+        {
+          "file": "packages/web/tsconfig.lint.json",
+          "hash": "17669938829119429739"
+        }
+      ],
+      "@mono/react-e2e-demo": [
+        {
+          "file": "e2e/demos/react-e2e-demo/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/.gitignore",
+          "hash": "987422939859577920"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/index.html",
+          "hash": "18153721666022770130"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/package.json",
+          "hash": "6728318711827171672",
+          "deps": [
+            "@mono/core",
+            "npm:react",
+            "npm:react-dom",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:babel-plugin-istanbul",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-plugin-babel"
+          ]
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/App.css",
+          "hash": "2229811984542628135"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/App.tsx",
+          "hash": "6876309885378480898"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/components/TestCore.tsx",
+          "hash": "1637872173401330125"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/index.css",
+          "hash": "16429327487863378957"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/main.tsx",
+          "hash": "11662172119024583167"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/src/vite-env.d.ts",
+          "hash": "7856441258253745083"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/tsconfig.json",
+          "hash": "1782624374251250419"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/tsconfig.lint.json",
+          "hash": "14128992738164532402"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/tsconfig.node.json",
+          "hash": "7015916191451143523"
+        },
+        {
+          "file": "e2e/demos/react-e2e-demo/vite.config.ts",
+          "hash": "417929913714596861"
+        }
+      ],
+      "@mono/tsconfig": [
+        {
+          "file": "utils/tsconfig/package.json",
+          "hash": "14675188218141589501"
+        },
+        {
+          "file": "utils/tsconfig/tsconfig.json",
+          "hash": "3767303950245792881"
+        }
+      ],
+      "@mono/shared": [
+        {
+          "file": "packages/shared/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "packages/shared/README.md",
+          "hash": "16809649262318567990"
+        },
+        {
+          "file": "packages/shared/jest.config.cjs",
+          "hash": "6964207754933423919"
+        },
+        {
+          "file": "packages/shared/package.json",
+          "hash": "8223886857501786477",
+          "deps": ["@mono/tsconfig", "@mono/eslint-config"]
+        },
+        {
+          "file": "packages/shared/src/__test__/index.spec.ts",
+          "hash": "3700791670074610207"
+        },
+        {
+          "file": "packages/shared/src/index.ts",
+          "hash": "11163535096841159629"
+        },
+        {
+          "file": "packages/shared/src/styles/other-styles.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/shared/src/styles/scrollbar/scrollbar-Qinglong.css",
+          "hash": "15554501425698048744"
+        },
+        {
+          "file": "packages/shared/src/styles/text.txt",
+          "hash": "9349621789819495697"
+        },
+        {
+          "file": "packages/shared/tsconfig.json",
+          "hash": "6898368045740043758"
+        },
+        {
+          "file": "packages/shared/tsconfig.lint.json",
+          "hash": "17669938829119429739"
+        }
+      ],
+      "@mono/vue-3-js": [
+        {
+          "file": "app/vue-3-js/.eslintrc.cjs",
+          "hash": "10802035820326510976"
+        },
+        {
+          "file": "app/vue-3-js/.gitignore",
+          "hash": "12607690972080158823"
+        },
+        {
+          "file": "app/vue-3-js/README.md",
+          "hash": "9332792600469807280"
+        },
+        {
+          "file": "app/vue-3-js/index.html",
+          "hash": "15372602629100845236"
+        },
+        {
+          "file": "app/vue-3-js/package.json",
+          "hash": "2432426409404840274",
+          "deps": [
+            "npm:@unocss/reset",
+            "npm:pinia",
+            "npm:vue",
+            "npm:vue-router",
+            "npm:@vitejs/plugin-vue",
+            "npm:@vitejs/plugin-vue-jsx",
+            "npm:@vue/test-utils",
+            "npm:eslint",
+            "npm:eslint-plugin-vue",
+            "npm:jsdom",
+            "npm:tailwindcss",
+            "npm:unocss",
+            "npm:vite",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "app/vue-3-js/public/favicon.ico",
+          "hash": "18282137866655320110"
+        },
+        {
+          "file": "app/vue-3-js/src/App.vue",
+          "hash": "12729176688422519015"
+        },
+        {
+          "file": "app/vue-3-js/src/assets/base.css",
+          "hash": "17606888682026032941"
+        },
+        {
+          "file": "app/vue-3-js/src/assets/logo.svg",
+          "hash": "6167914926564458402"
+        },
+        {
+          "file": "app/vue-3-js/src/assets/main.css",
+          "hash": "9349734499516969296"
+        },
+        {
+          "file": "app/vue-3-js/src/components/HelloWorld.vue",
+          "hash": "17963519761888459536"
+        },
+        {
+          "file": "app/vue-3-js/src/components/TheWelcome.vue",
+          "hash": "8938161256332979537"
+        },
+        {
+          "file": "app/vue-3-js/src/components/WelcomeItem.vue",
+          "hash": "1893386521532629865"
+        },
+        {
+          "file": "app/vue-3-js/src/components/__tests__/HelloWorld.spec.js",
+          "hash": "6285024542601463045"
+        },
+        {
+          "file": "app/vue-3-js/src/components/icons/IconCommunity.vue",
+          "hash": "716798125883167502"
+        },
+        {
+          "file": "app/vue-3-js/src/components/icons/IconDocumentation.vue",
+          "hash": "15220442022886887517"
+        },
+        {
+          "file": "app/vue-3-js/src/components/icons/IconEcosystem.vue",
+          "hash": "13045719497119006782"
+        },
+        {
+          "file": "app/vue-3-js/src/components/icons/IconSupport.vue",
+          "hash": "1812810763961648707"
+        },
+        {
+          "file": "app/vue-3-js/src/components/icons/IconTooling.vue",
+          "hash": "16297181837101803878"
+        },
+        {
+          "file": "app/vue-3-js/src/main.js",
+          "hash": "1842060878220441275"
+        },
+        {
+          "file": "app/vue-3-js/src/router/index.js",
+          "hash": "15698712993192287412"
+        },
+        {
+          "file": "app/vue-3-js/src/stores/counter.js",
+          "hash": "3590648083828400687"
+        },
+        {
+          "file": "app/vue-3-js/src/views/AboutView.vue",
+          "hash": "786400159053025860"
+        },
+        {
+          "file": "app/vue-3-js/src/views/HomeView.vue",
+          "hash": "14594337392100856077"
+        },
+        {
+          "file": "app/vue-3-js/tailwind.config.js",
+          "hash": "14578392928917398993"
+        },
+        {
+          "file": "app/vue-3-js/uno.config.js",
+          "hash": "8882737512668659377"
+        },
+        {
+          "file": "app/vue-3-js/vite.config.js",
+          "hash": "13872116135998752191"
+        },
+        {
+          "file": "app/vue-3-js/vitest.config.js",
+          "hash": "13686673784529800163"
+        }
+      ],
+      "@mono/eslint-config": [
+        {
+          "file": "utils/eslint-config/index.js",
+          "hash": "13120975658744633281"
+        },
+        {
+          "file": "utils/eslint-config/package.json",
+          "hash": "12365868948845246906",
+          "deps": [
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-html",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-prettier",
+            "npm:eslint-plugin-sonarjs",
+            "npm:prettier",
+            "npm:typescript"
+          ]
+        }
+      ],
+      "@mono/e2e": [
+        {
+          "file": "e2e/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "e2e/.nyc_output/out.json",
+          "hash": "6648735322216673667"
+        },
+        {
+          "file": "e2e/cypress.config.ts",
+          "hash": "12958773249538233883"
+        },
+        {
+          "file": "e2e/cypress/e2e/mono-core.spec.ts",
+          "hash": "8045225370407980783"
+        },
+        {
+          "file": "e2e/cypress/e2e/mono-react.spec.ts",
+          "hash": "8045225370407980783"
+        },
+        {
+          "file": "e2e/cypress/fixtures/example.json",
+          "hash": "13882982864087580737"
+        },
+        {
+          "file": "e2e/cypress/support/commands.ts",
+          "hash": "8185766526666186390"
+        },
+        {
+          "file": "e2e/cypress/support/e2e.ts",
+          "hash": "11824501839964786252"
+        },
+        {
+          "file": "e2e/package.json",
+          "hash": "9550357924371373487",
+          "deps": [
+            "npm:@cypress/code-coverage",
+            "@mono/eslint-config",
+            "@mono/tsconfig",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "e2e/tsconfig.json",
+          "hash": "237913994995340965"
+        },
+        {
+          "file": "e2e/tsconfig.lint.json",
+          "hash": "6212676593385860136"
+        }
+      ],
+      "@mono/rollup": [
+        {
+          "file": "utils/rollup/bin/common/help.js",
+          "hash": "6369600349593381321"
+        },
+        {
+          "file": "utils/rollup/bin/common/index.js",
+          "hash": "6103450231386908494"
+        },
+        {
+          "file": "utils/rollup/bin/common/utils.js",
+          "hash": "8647910218894142169"
+        },
+        {
+          "file": "utils/rollup/bin/index.js",
+          "hash": "11569387148568406975"
+        },
+        {
+          "file": "utils/rollup/package.json",
+          "hash": "10541410913086871093",
+          "deps": [
+            "npm:@rollup/plugin-babel",
+            "npm:babel-plugin-istanbul",
+            "npm:cac",
+            "npm:execa",
+            "npm:fast-glob",
+            "npm:minimist",
+            "npm:rollup-plugin-dts"
+          ]
+        },
+        {
+          "file": "utils/rollup/src/common.js",
+          "hash": "14315002660130284871"
+        },
+        {
+          "file": "utils/rollup/src/dts.js",
+          "hash": "16737188522716938849"
+        },
+        {
+          "file": "utils/rollup/src/index.js",
+          "hash": "1229169333168286049"
+        },
+        {
+          "file": "utils/rollup/src/output.js",
+          "hash": "11686546348531856204"
+        },
+        {
+          "file": "utils/rollup/src/utils.js",
+          "hash": "11866656857509645947"
+        }
+      ],
+      "@mono/core": [
+        {
+          "file": "packages/core/.eslintrc.cjs",
+          "hash": "9091719087341036828"
+        },
+        {
+          "file": "packages/core/README.md",
+          "hash": "14516637943713372437"
+        },
+        {
+          "file": "packages/core/jest.config.cjs",
+          "hash": "6964207754933423919"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "17466545059141992325",
+          "deps": ["@mono/rollup", "@mono/shared", "@mono/tsconfig", "@mono/eslint-config"]
+        },
+        {
+          "file": "packages/core/rollups/cjs.rollup.mjs",
+          "hash": "16085676159222853839"
+        },
+        {
+          "file": "packages/core/rollups/esm.rollup.mjs",
+          "hash": "2217016429691011063"
+        },
+        {
+          "file": "packages/core/rollups/iife.rollup.mjs",
+          "hash": "6931368919702430598"
+        },
+        {
+          "file": "packages/core/src/__test__/index.spec.ts",
+          "hash": "10622740956608219432"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "12798656970990184526"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "5080743983220507057"
+        },
+        {
+          "file": "packages/core/tsconfig.lint.json",
+          "hash": "5017289214300098907"
+        }
+      ],
+      "@mono/vue-3": [
+        {
+          "file": "app/vue-3/.eslintrc.cjs",
+          "hash": "711483079686026824"
+        },
+        {
+          "file": "app/vue-3/.gitignore",
+          "hash": "12607690972080158823"
+        },
+        {
+          "file": "app/vue-3/README.md",
+          "hash": "16762423619802096430"
+        },
+        {
+          "file": "app/vue-3/doc/算法/背包问题.js",
+          "hash": "10731213761288078569"
+        },
+        {
+          "file": "app/vue-3/index.html",
+          "hash": "3309022278047431112"
+        },
+        {
+          "file": "app/vue-3/package.json",
+          "hash": "7215840113464110707",
+          "deps": [
+            "npm:@fingerprintjs/fingerprintjs",
+            "npm:@unocss/reset",
+            "npm:pinia",
+            "npm:vue",
+            "npm:vue-router",
+            "npm:@rushstack/eslint-patch",
+            "npm:@tsconfig/node20",
+            "npm:@types/jsdom",
+            "npm:@types/node",
+            "npm:@vitejs/plugin-vue",
+            "npm:@vitejs/plugin-vue-jsx",
+            "npm:@vue/eslint-config-typescript",
+            "npm:@vue/test-utils",
+            "npm:@vue/tsconfig",
+            "npm:eslint",
+            "npm:eslint-plugin-vue",
+            "npm:jsdom",
+            "npm:npm-run-all",
+            "npm:sass",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:unocss",
+            "npm:vite",
+            "npm:vitest",
+            "npm:vue-tsc"
+          ]
+        },
+        {
+          "file": "app/vue-3/public/favicon.ico",
+          "hash": "18282137866655320110"
+        },
+        {
+          "file": "app/vue-3/src/App.vue",
+          "hash": "14046974114237426600"
+        },
+        {
+          "file": "app/vue-3/src/assets/base.css",
+          "hash": "6743320893529902660"
+        },
+        {
+          "file": "app/vue-3/src/assets/logo.svg",
+          "hash": "6167914926564458402"
+        },
+        {
+          "file": "app/vue-3/src/assets/main.css",
+          "hash": "7192938300444869720"
+        },
+        {
+          "file": "app/vue-3/src/components/HelloWorld.vue",
+          "hash": "15007696784738673220"
+        },
+        {
+          "file": "app/vue-3/src/components/TheWelcome.vue",
+          "hash": "15178317085444245674"
+        },
+        {
+          "file": "app/vue-3/src/components/WelcomeItem.vue",
+          "hash": "5974138288467390820"
+        },
+        {
+          "file": "app/vue-3/src/components/__tests__/HelloWorld.spec.ts",
+          "hash": "6285024542601463045"
+        },
+        {
+          "file": "app/vue-3/src/components/icons/IconCommunity.vue",
+          "hash": "716798125883167502"
+        },
+        {
+          "file": "app/vue-3/src/components/icons/IconDocumentation.vue",
+          "hash": "15220442022886887517"
+        },
+        {
+          "file": "app/vue-3/src/components/icons/IconEcosystem.vue",
+          "hash": "13045719497119006782"
+        },
+        {
+          "file": "app/vue-3/src/components/icons/IconSupport.vue",
+          "hash": "1812810763961648707"
+        },
+        {
+          "file": "app/vue-3/src/components/icons/IconTooling.vue",
+          "hash": "16297181837101803878"
+        },
+        {
+          "file": "app/vue-3/src/hooks/useBrowserFingerprint.js",
+          "hash": "12581709856038480532"
+        },
+        {
+          "file": "app/vue-3/src/main.ts",
+          "hash": "8868154996319391259"
+        },
+        {
+          "file": "app/vue-3/src/router/index.ts",
+          "hash": "17879784458666025513"
+        },
+        {
+          "file": "app/vue-3/src/router/routers.ts",
+          "hash": "9349429099474968500"
+        },
+        {
+          "file": "app/vue-3/src/stores/counter.ts",
+          "hash": "3590648083828400687"
+        },
+        {
+          "file": "app/vue-3/src/views/AboutView.vue",
+          "hash": "12150052938813382939"
+        },
+        {
+          "file": "app/vue-3/src/views/BrowserFingerprint/index.vue",
+          "hash": "12982751395607242848"
+        },
+        {
+          "file": "app/vue-3/src/views/ContextMenu/index.vue",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "app/vue-3/src/views/HomeView.vue",
+          "hash": "2199914593811673884"
+        },
+        {
+          "file": "app/vue-3/src/views/NativeJs/DragAndDropDemo.vue",
+          "hash": "3093240232785279348"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/Demo.vue",
+          "hash": "16406054027001755496"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/下划线导航栏.vue",
+          "hash": "16195862324099729912"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/中秋贺卡.vue",
+          "hash": "15091258653973851756"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/多行文本展开.vue",
+          "hash": "5243269543312835299"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/密码灯登录.vue",
+          "hash": "16242783810376059435"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/悬停侧边栏.vue",
+          "hash": "12166469989882657367"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/步骤条.vue",
+          "hash": "4898660492952185420"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/注册登录切换.vue",
+          "hash": "8559179286690158713"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/components/雷达扫描.vue",
+          "hash": "15792908159648597816"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/CSSPage/index.vue",
+          "hash": "4064697947795931217"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/components/BrowserFingerprint/index.vue",
+          "hash": "12982751395607242848"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/components/DragAndDropUpload/index.vue",
+          "hash": "14057312636949537717"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/components/PictureCropping/index.vue",
+          "hash": "4966167495509261871"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/components/StreamingOfDownloads/index.vue",
+          "hash": "8010833007752994445"
+        },
+        {
+          "file": "app/vue-3/src/views/PageDemo/index.vue",
+          "hash": "3874392890687755508"
+        },
+        {
+          "file": "app/vue-3/tailwind.config.js",
+          "hash": "8601048056665938634"
+        },
+        {
+          "file": "app/vue-3/tsconfig.app.json",
+          "hash": "11146228287790660789"
+        },
+        {
+          "file": "app/vue-3/tsconfig.json",
+          "hash": "1432486006206819616"
+        },
+        {
+          "file": "app/vue-3/tsconfig.node.json",
+          "hash": "4030459949447523532"
+        },
+        {
+          "file": "app/vue-3/tsconfig.vitest.json",
+          "hash": "8028976854864079861"
+        },
+        {
+          "file": "app/vue-3/type/env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "app/vue-3/type/resolveVue.d.ts",
+          "hash": "8854261837365792349"
+        },
+        {
+          "file": "app/vue-3/uno.config.ts",
+          "hash": "3174263727515885784"
+        },
+        {
+          "file": "app/vue-3/vite.config.ts",
+          "hash": "13681709165781455703"
+        },
+        {
+          "file": "app/vue-3/vitest.config.ts",
+          "hash": "13686673784529800163"
+        }
+      ],
+      "@mono/react": [
+        {
+          "file": "packages/react/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "packages/react/jest.config.cjs",
+          "hash": "6964207754933423919"
+        },
+        {
+          "file": "packages/react/package.json",
+          "hash": "10986132105549062858",
+          "deps": ["@mono/web", "@mono/eslint-config", "@mono/tsconfig", "@mono/rollup"]
+        },
+        {
+          "file": "packages/react/rollups/cjs.rollup.mjs",
+          "hash": "16085676159222853839"
+        },
+        {
+          "file": "packages/react/rollups/esm.rollup.mjs",
+          "hash": "2217016429691011063"
+        },
+        {
+          "file": "packages/react/rollups/iife.rollup.mjs",
+          "hash": "6931368919702430598"
+        },
+        {
+          "file": "packages/react/src/__test__/index.spec.ts",
+          "hash": "11548642079358378538"
+        },
+        {
+          "file": "packages/react/src/index.ts",
+          "hash": "1320003218977760025"
+        },
+        {
+          "file": "packages/react/tsconfig.json",
+          "hash": "13616483028729910230"
+        },
+        {
+          "file": "packages/react/tsconfig.lint.json",
+          "hash": "17669938829119429739"
+        }
+      ],
+      "@mono/react-18": [
+        {
+          "file": "app/react-18/.eslintrc.cjs",
+          "hash": "3916057012293555282"
+        },
+        {
+          "file": "app/react-18/.gitignore",
+          "hash": "987422939859577920"
+        },
+        {
+          "file": "app/react-18/.lintstagedrc.js",
+          "hash": "8610533943712002811"
+        },
+        {
+          "file": "app/react-18/index.html",
+          "hash": "18153721666022770130"
+        },
+        {
+          "file": "app/react-18/package.json",
+          "hash": "1297244651035820830",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "@mono/react",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:typescript",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "app/react-18/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "app/react-18/src/App.css",
+          "hash": "2229811984542628135"
+        },
+        {
+          "file": "app/react-18/src/App.tsx",
+          "hash": "11430572768352313506"
+        },
+        {
+          "file": "app/react-18/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "app/react-18/src/index.css",
+          "hash": "16429327487863378957"
+        },
+        {
+          "file": "app/react-18/src/main.tsx",
+          "hash": "7143727371084389658"
+        },
+        {
+          "file": "app/react-18/src/vite-env.d.ts",
+          "hash": "7856441258253745083"
+        },
+        {
+          "file": "app/react-18/tsconfig.json",
+          "hash": "11217998733029894041"
+        },
+        {
+          "file": "app/react-18/tsconfig.lint.json",
+          "hash": "10671264953387421648"
+        },
+        {
+          "file": "app/react-18/tsconfig.node.json",
+          "hash": "7015916191451143523"
+        },
+        {
+          "file": "app/react-18/vite.config.ts",
+          "hash": "9741783092172070544"
+        }
+      ],
+      "vite-vue-starter": [
+        {
+          "file": "app/vitejs-vite-qinglong/.eslintrc.cjs",
+          "hash": "3167547469084174775"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/README.md",
+          "hash": "10901729339794645895"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/index.html",
+          "hash": "9489566880228333705"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/package.json",
+          "hash": "14683749033177450239",
+          "deps": [
+            "npm:@unocss/reset",
+            "npm:@vueuse/core",
+            "npm:alova",
+            "npm:pinia",
+            "npm:vue",
+            "npm:vue-router",
+            "npm:vxe-table",
+            "npm:@vitejs/plugin-vue",
+            "npm:unocss",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/App.vue",
+          "hash": "14347150165080189256"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/api/qinglong.js",
+          "hash": "16156114784003635513"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/assets/vue.svg",
+          "hash": "6215844894841429247"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/components/HelloWorld.vue",
+          "hash": "7058381939369142069"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/main.js",
+          "hash": "14201690117186726673"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/router/index.js",
+          "hash": "14935709155972992832"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/stores/index.js",
+          "hash": "16044679441049385281"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/stores/qinglong.js",
+          "hash": "5534976342055343145"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/style.css",
+          "hash": "2254951982243919020"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/utils/requests/alova/qinglong.js",
+          "hash": "2083952703804033061"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/utils/requests/fetch/qinglong.js",
+          "hash": "17556488165855332506"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/views/home/index.vue",
+          "hash": "10475043695705721957"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/views/meituanTokenManage/FormDialog.vue",
+          "hash": "9915699263872819729"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/views/meituanTokenManage/TaskLogDialog.vue",
+          "hash": "13869636910354383552"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/src/views/meituanTokenManage/index.vue",
+          "hash": "5116632861223932520"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/uno.config.js",
+          "hash": "5787386085736476754"
+        },
+        {
+          "file": "app/vitejs-vite-qinglong/vite.config.js",
+          "hash": "784421254476243390"
+        }
+      ]
+    }
+  }
+}
