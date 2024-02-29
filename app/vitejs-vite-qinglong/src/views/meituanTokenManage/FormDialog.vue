@@ -14,7 +14,7 @@ const formData = ref({
 const formRules = reactive({
   name: [
     { required: true, message: '请输入名称' },
-    { min: 1, max: 5, message: '长度在 3 到 5 个字符' }
+    { min: 1, message: '长度需大于 1 个字符' }
   ],
 });
 const submitEvent = () => {

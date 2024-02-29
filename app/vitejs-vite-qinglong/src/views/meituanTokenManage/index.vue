@@ -51,7 +51,7 @@ const gridOptions = reactive({
       title: '姓名',
       editRender: { autofocus: '.vxe-input--inner' },
       slots: { edit: 'name_edit' },
-      width: 100,
+      width: 150,
     },
     {
       field: 'token',
