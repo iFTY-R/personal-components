@@ -1,10 +1,11 @@
 import { createFetch } from '@vueuse/core'
 import { useQinglongStore } from '@/stores/qinglong.js'
+import { QING_LONG_BASE_URL } from '@/config/qinglong.js'
 
 const qinglongStore = useQinglongStore()
 
 const useQinglongFetch = createFetch({
-  baseUrl: 'http://116.196.94.1:5700',
+  baseUrl: QING_LONG_BASE_URL,
   combination: 'overwrite',
   options: {
     // beforeFetch in pre-configured instance will only run when the newly spawned instance do not pass beforeFetch

@@ -1,16 +1,12 @@
 import { useQinglongStore } from '@/stores/qinglong.js'
 import alovaInstance from '@/utils/requests/alova/qinglong.js'
+import { QING_LONG_CLIENT_MEI_TUAN } from '@/config/qinglong.js'
 
 const qinglongStore = useQinglongStore()
 
-const options = {
-  clientId: 'v-8kJgAcnA8l',
-  clientSecret: '8Py3NQAE-Nr9b2Cj_aMGh3v_'
-}
-
-export const QINGLONG_TASK_MEITUAN_ID = 2
-
 export function login() {
+  const options = qinglongStore.config || QING_LONG_CLIENT_MEI_TUAN
+
   const url = `/open/auth/token?client_id=${options.clientId}&client_secret=${options.clientSecret}`
   return alovaInstance.Get(url).then((res) => {
     // console.log(res);
@@ -69,7 +65,7 @@ export function updateEnv({ id, name, remarks, value }) {
 }
 
 function runTask(ids) {
-  if (!ids.length) return
+  if (!ids.length) return Promise.resolve({})
   const url = `/open/crons/run`
   //   /api/crons/run?t=1709002290807
   return alovaInstance.Put(url, ids).then((res) => {
@@ -78,7 +74,10 @@ function runTask(ids) {
 }
 
 export function runMeituanTask() {
-  return runTask([QINGLONG_TASK_MEITUAN_ID])
+  if (!qinglongStore.config.taskMeiTuanId) {
+    return runTask([])
+  }
+  return runTask([qinglongStore.config.taskMeiTuanId])
 }
 
 export function getTaskLogById(id) {
