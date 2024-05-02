@@ -1,8 +1,9 @@
 packages:
+  - 'main' # 主应用 - WuJie 微前端
   # all packages in direct subdirs of packages/
   - 'packages/*'
   - 'utils/*'
-  - 'app/*'
-  - 'app-server/*'
+  - 'app/*' # 客户端应用
+  - 'app-server/*' # 服务端应用
   - 'e2e'
   - 'e2e/demos/*'
