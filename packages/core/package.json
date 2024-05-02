@@ -6,6 +6,12 @@
   "license": "MIT",
   "main": "src/index.ts",
   "module": "esm/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./esm/index.js"
+    }
+  },
   "types": "esm/index.d.ts",
   "publishConfig": {
     "main": "esm/index.js",

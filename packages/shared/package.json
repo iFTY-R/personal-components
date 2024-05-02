@@ -6,15 +6,25 @@
   "license": "MIT",
   "main": "src/index.ts",
   "module": "esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./esm/index.js"
+    },
+    "./scrollbar": {
+      "import": "./src/styles/scrollbar/scrollbar-Qinglong.css",
+      "require": "./src/styles/scrollbar/scrollbar-Qinglong.css"
+    },
+    "./other-styles": {
+      "import": "./src/styles/scrollbar/other-styles.css",
+      "require": "./src/styles/scrollbar/other-styles.css"
+    }
+  },
   "types": "esm/index.d.ts",
   "files": ["dist"],
   "scripts": {
     "esm": "tsc -b ./tsconfig.json",
     "test": "jest --config jest.config.cjs"
-  },
-  "style": {
-    "scrollbar": "./src/styles/scrollbar/scrollbar-Qinglong.css",
-    "other-styles": "./src/styles/scrollbar/other-styles.css"
   },
   "devDependencies": {
     "@mono/tsconfig": "workspace:*",

@@ -19,6 +19,26 @@
 }
 ```
 
+上面的是就写法，需要改成下面的，否则报错。
+
+```json
+{
+  "name": "my-shared-styles",
+  "version": "1.0.0",
+  "exports": {
+    "./scrollbar": {
+      "import": "./src/styles/scrollbar/scrollbar-Qinglong.css",
+      "require": "./src/styles/scrollbar/scrollbar-Qinglong.css"
+    },
+    "./other-styles": {
+      "import": "./src/styles/scrollbar/other-styles.css",
+      "require": "./src/styles/scrollbar/other-styles.css"
+    }
+  }
+}
+```
+
+
 在需要使用滚动条样式的文件中，使用import语句导入my-shared-styles包的scrollbar模块，例如：
 ```javascript
 import 'my-shared-styles/scrollbar';
