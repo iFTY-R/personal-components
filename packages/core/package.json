@@ -4,13 +4,13 @@
   "description": "@mono/core",
   "author": "cjinhuo",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "module": "esm/index.esm.js",
+  "types": "esm/index.d.ts",
   "publishConfig": {
-    "main": "dist/index.js",
-    "module": "dist/index.esm.js",
-    "types": "dist/index.d.ts"
+    "main": "esm/index.js",
+    "module": "esm/index.esm.js",
+    "types": "esm/index.d.ts"
   },
   "type": "module",
   "files": ["dist"],
