@@ -178,11 +178,14 @@ const currentTimeStr = computed(() => dayjs(timestamp.value).format('YYYY-MM-DD 
   <div class="">
     <div>
       <div class="">
-        <span>最后运行时间：</span>
-        <a-tag bordered color="green">
-          {{ dayjs(+`${ taskInfo.last_execution_time }000`).format('YYYY-MM-DD HH:mm:ss') }}
-        </a-tag>
-        <span> ，下次运行时间：</span>
+        <template v-if="taskInfo.last_execution_time">
+          <span>最后运行时间：</span>
+          <a-tag bordered color="green">
+            {{ dayjs(+`${ taskInfo.last_execution_time }000`).format('YYYY-MM-DD HH:mm:ss') }}
+          </a-tag>
+          ，
+        </template>
+        <span> 下次运行时间：</span>
         <a-tag bordered color="pinkpurple">
           {{ dayjs(taskInfo.nextRunTime).format('YYYY-MM-DD HH:mm:ss') }}
         </a-tag>
