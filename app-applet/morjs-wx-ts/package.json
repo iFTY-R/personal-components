@@ -1,0 +1,22 @@
+{
+  "name": "morjs-wx-ts",
+  "version": "1.0.0",
+  "description": "MorJS 的 微信 DSL Demo",
+  "scripts": {
+    "dev": "mor compile --watch",
+    "compile": "mor compile --production",
+    "dev:web": "mor compile --name web -w",
+    "compile:web": "mor compile --name web --production"
+  },
+  "keywords": [],
+  "author": "ifty_cloud <ifty_cloud@126.com>",
+  "license": "",
+  "dependencies": {
+    "@morjs/core": "1.0.111-alpha.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.24.7",
+    "@morjs/cli": "^1.0.113",
+    "webpack": "^5.91.0"
+  }
+}
