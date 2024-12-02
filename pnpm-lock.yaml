@@ -1236,7 +1236,6 @@ packages:
     engines: { node: '>=6.9.0' }
     peerDependencies:
       '@babel/core': ^7.0.0
-
   '@babel/helper-module-transforms@7.26.0':
     resolution:
       {
@@ -1569,10 +1568,10 @@ packages:
       {
         integrity: sha512-aLnMXYPnzwwqhYSCyXfKkIkYgJ8zv9RK+roo9DkTXz38ynIhd9XCbN08s3MGvqL2MYGVUGdRQLL/JqBIeJhJBg==
       }
+
     engines: { node: '>=6.9.0' }
     peerDependencies:
       '@babel/core': ^7.0.0
-
   '@babel/plugin-proposal-async-generator-functions@7.20.7':
     resolution:
       {
