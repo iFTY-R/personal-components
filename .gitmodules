@@ -1,0 +1,4 @@
+[submodule "app/vite-react-boilerplate"]
+	path = app/vite-react-boilerplate
+	url = git@github.com:iFTY-R/vite-react-boilerplate.git
+	branch = ifty_cloud
