@@ -6,3 +6,7 @@
 	path = app/vitesse
 	url = git@github.com:iFTY-R/vitesse.git
 	branch = ifty_cloud
+[submodule "app/vitesse-nuxt"]
+	path = app/vitesse-nuxt
+	url = git@github.com:iFTY-R/vitesse-nuxt.git
+	branch = ifty_cloud
