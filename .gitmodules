@@ -2,3 +2,7 @@
 	path = app/vite-react-boilerplate
 	url = git@github.com:iFTY-R/vite-react-boilerplate.git
 	branch = ifty_cloud
+[submodule "app/vitesse"]
+	path = app/vitesse
+	url = git@github.com:iFTY-R/vitesse.git
+	branch = ifty_cloud
