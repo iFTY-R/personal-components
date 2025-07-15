@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"description": "@mono/react",
 	"author": "cjinhuo",
+	"private": "true",
 	"license": "MIT",
 	"main": "src/index.ts",
 	"module": "src/index.ts",
@@ -13,9 +14,12 @@
 		"types": "dist/index.d.ts"
 	},
 	"type": "module",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"esm": "tsc -b ./tsconfig.json",
+		"watch:esm": "tsc -b ./tsconfig.json --watch",
 		"rollup": "batch-rollup -d ./rollups",
 		"build": "run-s esm rollup",
 		"build:cjs": "batch-rollup -d ./rollups -f cjs",
