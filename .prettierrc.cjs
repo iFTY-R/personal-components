@@ -5,7 +5,6 @@ module.exports = {
   jsxSingleQuote: true,
   proseWrap: 'never',
   bracketSpacing: true,
-  trailingComma: 'none',
   printWidth: 100,
-  htmlWhitespaceSensitivity: 'ignore'
+  htmlWhitespaceSensitivity: 'ignore',
 }

@@ -1,4 +1,8 @@
 {
-	"extends": "@mono/tsconfig",
-	"include": ["**/src/**/*.ts", "**/src/**/*.tsx", "**/.eslintrc.cjs"]
+  "extends": "@mono/tsconfig",
+  "include": [
+    "**/src/**/*.ts",
+    "**/src/**/*.tsx",
+    "**/.eslintrc.cjs"
+  ]
 }
