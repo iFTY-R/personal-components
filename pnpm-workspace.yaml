@@ -6,5 +6,6 @@ packages:
   - 'app/*' # 客户端应用
   - 'app-cli/*' # 脚手架工具
   - 'app-server/*' # 服务端应用
+  - 'app-babel/*' # babel 插件
   - 'e2e'
   - 'e2e/demos/*'
